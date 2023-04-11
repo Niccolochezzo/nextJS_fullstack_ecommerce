@@ -8,15 +8,15 @@ const Home = ({ products, bannerData }) => {
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
       <div className="products-heading">
-        <h2>Buy comfort for your soul</h2>
-        <p>Tendency is not for us</p>
+        <h2>Art is not a thing,</h2>
+        <p>it is a way.</p>
       </div>
       <div className="products-container">
         {products?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
       </div>
-      <FooterBanner footerBanner={bannerData && bannerData[0]} />
+      <FooterBanner footerBanner={bannerData && bannerData[1]} />
     </>
   );
 };
